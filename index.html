@@ -33,8 +33,10 @@
 
           <ul class="contacts">
             <li>
-              <!-- <img src="./images/envelope-hover.svg" alt="Почта компании" /> -->
-              <a href="" class="contacts-list">info@devstudio.com</a>
+              <a href="" class="contacts-list">
+                <!-- <img src="./images/icon-envelope.svg" alt="Почта компании" /> -->
+                info@devstudio.com</a
+              >
             </li>
 
             <li>
@@ -46,58 +48,60 @@
       </div>
     </header>
     <main>
-      <!-- Hero -->
-      <section class="hero container">
-        <h1>эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero-button">Заказать услугу</button>
+      <!-- Hero  class="hero container"-->
+      <section>
+        <div class="overlay">
+          <h1>эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="hero-button">Заказать услугу</button>
+        </div>
       </section>
       <!-- Акценты в работе -->
       <section class="work-accents">
         <div class="container">
           <h2 class="work-accents-header">Акценты в работе</h2>
           <ul>
-            <li>
-              <img
+            <li class="work-icon thumb-antenna">
+              <!-- <img
                 src="./images/vector-1.svg"
                 height="70"
                 alt="Изображение антенны"
-              />
+              /> -->
               <h3>Внимание к деталям</h3>
               <p class="work-accents-p">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
-              <img
+            <li class="work-icon thumb-clock">
+              <!-- <img
                 src="./images/vector-2.svg"
                 height="70"
                 alt="Изображение с часами"
-              />
+              /> -->
               <h3>Пунктуальность</h3>
               <p class="work-accents-p">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
-              <img
+            <li class="work-icon thumb-diagram">
+              <!-- <img
                 src="./images/vector-3.svg"
                 height="70"
                 alt="Изображение с диаграммой"
-              />
+              /> -->
               <h3>Планирование</h3>
               <p class="work-accents-p">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
-              <img
+            <li class="work-icon thumb-astronaut">
+              <!-- <img
                 src="./images/astronaut.svg"
                 height="70"
                 alt="Изображение астронавта"
-              />
+              /> -->
               <h3>Современные технологии</h3>
               <p class="work-accents-p">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -131,16 +135,26 @@
       <section class="teampeople">
         <div class="container">
           <h2>Наша команда</h2>
-          <ul>
+          <ul class="teampeople-card">
             <li>
               <img src="./images/img-1.jpg" alt="Симпатяга 1" />
               <h3 lang="en">John Smith</h3>
               <p lang="en">Product Designer</p>
               <ul>
-                <li><a href="" aria-label="Ссылка на Instagram"></a></li>
-                <li><a href="" aria-label="Ссылка на Twitter"></a></li>
-                <li><a href="" aria-label="Ссылка на Facebook"></a></li>
-                <li><a href="" aria-label="Ссылка на LinkedIn"></a></li>
+                <div class="teampeople-icons-container">
+                  <li class="teampeople-icons icon-inst">
+                    <a href="" aria-label="Ссылка на Instagram"></a>
+                  </li>
+                  <li class="teampeople-icons icon-twitter">
+                    <a href="" aria-label="Ссылка на Twitter"></a>
+                  </li>
+                  <li class="teampeople-icons icon-facebook">
+                    <a href="" aria-label="Ссылка на Facebook"></a>
+                  </li>
+                  <li class="teampeople-icons icon-linkedin">
+                    <a href="" aria-label="Ссылка на LinkedIn"></a>
+                  </li>
+                </div>
               </ul>
             </li>
             <li>
@@ -148,10 +162,20 @@
               <h3 lang="en">Marta Stewart</h3>
               <p lang="en">Frontend Developer</p>
               <ul>
-                <li><a href="" aria-label="Ссылка на Instagram"></a></li>
-                <li><a href="" aria-label="Ссылка на Twitter"></a></li>
-                <li><a href="" aria-label="Ссылка на Facebook"></a></li>
-                <li><a href="" aria-label="Ссылка на LinkedIn"></a></li>
+                <div class="teampeople-icons-container">
+                  <li class="teampeople-icons icon-inst">
+                    <a href="" aria-label="Ссылка на Instagram"></a>
+                  </li>
+                  <li class="teampeople-icons icon-twitter">
+                    <a href="" aria-label="Ссылка на Twitter"></a>
+                  </li>
+                  <li class="teampeople-icons icon-facebook">
+                    <a href="" aria-label="Ссылка на Facebook"></a>
+                  </li>
+                  <li class="teampeople-icons icon-linkedin">
+                    <a href="" aria-label="Ссылка на LinkedIn"></a>
+                  </li>
+                </div>
               </ul>
             </li>
             <li>
@@ -159,10 +183,20 @@
               <h3 lang="en">Robert Jakis</h3>
               <p lang="en">Marketing</p>
               <ul>
-                <li><a href="" aria-label="Ссылка на Instagram"></a></li>
-                <li><a href="" aria-label="Ссылка на Twitter"></a></li>
-                <li><a href="" aria-label="Ссылка на Facebook"></a></li>
-                <li><a href="" aria-label="Ссылка на LinkedIn"></a></li>
+                <div class="teampeople-icons-container">
+                  <li class="teampeople-icons icon-inst">
+                    <a href="" aria-label="Ссылка на Instagram"></a>
+                  </li>
+                  <li class="teampeople-icons icon-twitter">
+                    <a href="" aria-label="Ссылка на Twitter"></a>
+                  </li>
+                  <li class="teampeople-icons icon-facebook">
+                    <a href="" aria-label="Ссылка на Facebook"></a>
+                  </li>
+                  <li class="teampeople-icons icon-linkedin">
+                    <a href="" aria-label="Ссылка на LinkedIn"></a>
+                  </li>
+                </div>
               </ul>
             </li>
             <li>
@@ -170,10 +204,20 @@
               <h3 lang="en">Martin Doe</h3>
               <p lang="en">UI Designer</p>
               <ul>
-                <li><a href="" aria-label="Ссылка на Instagram"></a></li>
-                <li><a href="" aria-label="Ссылка на Twitter"></a></li>
-                <li><a href="" aria-label="Ссылка на Facebook"></a></li>
-                <li><a href="" aria-label="Ссылка на LinkedIn"></a></li>
+                <div class="teampeople-icons-container">
+                  <li class="teampeople-icons icon-inst">
+                    <a href="" aria-label="Ссылка на Instagram"></a>
+                  </li>
+                  <li class="teampeople-icons icon-twitter">
+                    <a href="" aria-label="Ссылка на Twitter"></a>
+                  </li>
+                  <li class="teampeople-icons icon-facebook">
+                    <a href="" aria-label="Ссылка на Facebook"></a>
+                  </li>
+                  <li class="teampeople-icons icon-linkedin">
+                    <a href="" aria-label="Ссылка на LinkedIn"></a>
+                  </li>
+                </div>
               </ul>
             </li>
           </ul>
@@ -231,10 +275,18 @@
         <div class="social-links">
           <b>присоединяйтесь</b>
           <ul class="footer-social-links">
-            <li><a href="" aria-label="Ссылка на Instagram"></a></li>
-            <li><a href="" aria-label="Ссылка на Twitter"></a></li>
-            <li><a href="" aria-label="Ссылка на Facebook"></a></li>
-            <li><a href="" aria-label="Ссылка на LinkedIn"></a></li>
+            <li class="social-links-icons icon-inst-f">
+              <a href="" aria-label="Ссылка на Instagram"></a>
+            </li>
+            <li class="social-links-icons icon-twitter-f">
+              <a href="" aria-label="Ссылка на Twitter"></a>
+            </li>
+            <li class="social-links-icons icon-facebook-f">
+              <a href="" aria-label="Ссылка на Facebook"></a>
+            </li>
+            <li class="social-links-icons icon-linkedin-f">
+              <a href="" aria-label="Ссылка на LinkedIn"></a>
+            </li>
           </ul>
         </div>
         <!-- Подписка -->

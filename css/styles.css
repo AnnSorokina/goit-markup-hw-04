@@ -99,7 +99,6 @@ menu {
 .site-menu {
   display: flex;
   align-items: center;
-  /* margin-right: 280px; */
 
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -155,10 +154,6 @@ p,
 
 /* Герой */
 
-/* .hero {
-  text-align: center;
-} */
-
 .overlay {
   max-width: 1600px;
   height: 600px;
@@ -193,7 +188,6 @@ h1 {
 }
 
 .hero-button {
-  /* display: inline-block; */
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -214,13 +208,6 @@ h1 {
 
 /* Work */
 
-/* .work-accents li:not(:last-child),
-.applications li:not(:last-child),
-.teampeople li:not(:last-child),
-.clients li:not(:last-child) {
-  margin-right: 30px;
-} */
-
 .work-accents {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -234,7 +221,6 @@ h1 {
 
 .work-accents li {
   width: calc((100% - 3 * 30px) / 4);
-  /* outline: 2px solid tomato; */
 }
 
 .work-pic {
@@ -268,22 +254,6 @@ h1 {
 
 /* .work-card:hover:before {
   background-color: var(--accent-text-color);
-} */
-
-/* .thumb-antenna:before {
-  background-image: url("../images/vector-1.svg");
-}
-
-.thumb-clock:before {
-  background-image: url("../images/vector-2.svg");
-}
-
-.thumb-diagram:before {
-  background-image: url("../images/vector-3.svg");
-}
-
-.thumb-astronaut:before {
-  background-image: url("../images/vector-4.svg");
 } */
 
 .work-accents h3 {
@@ -341,7 +311,6 @@ h1 {
 
   color: var(--title-text-color);
   background-color: var(--background-footer-color);
-  /* rgba(47, 48, 58, 0.8) */
 
   font-size: inherit;
   font-weight: 700;
@@ -435,22 +404,6 @@ h1 {
 .teampeople-icons svg:hover {
   fill: var(--title-text-color);
 }
-
-/* .icon-inst {
-  background-image: url(../images/icon-inst.svg);
-}
-
-.icon-twitter {
-  background-image: url(../images/icon-twitter.svg);
-}
-
-.icon-facebook {
-  background-image: url(../images/icon-facebook.svg);
-}
-
-.icon-linkedin {
-  background-image: url(../images/icon-linkedin.svg);
-} */
 
 .teampeople-icons:hover {
   background-color: var(--accent-text-color);
@@ -625,22 +578,6 @@ address {
   margin-right: 10px;
 }
 
-/* .icon-inst-f {
-  background-image: url(../images/icon-inst-f.svg);
-}
-
-.icon-twitter-f {
-  background-image: url(../images/icon-twitter-f.svg);
-}
-
-.icon-facebook-f {
-  background-image: url(../images/icon-facebook-f.svg);
-}
-
-.icon-linkedin-f {
-  background-image: url(../images/icon-linkedin-f.svg);
-} */
-
 .social-links-icons:hover {
   background-color: var(--accent-text-color);
   cursor: pointer;
@@ -685,17 +622,6 @@ address {
   text-align: center;
 }
 
-/* .mail-button:after {
-  display: block;
-  content: "";
-  width: 24px;
-  height: 24px;
-  margin-left: 8px;
-  background-image: url(../images/icon-send.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
-
 .subsription svg {
   display: flex;
   /* justify-content: center; */
@@ -733,10 +659,6 @@ address {
   display: inline-flex;
   flex-wrap: wrap;
 }
-
-/* .portfolio-works-list {
-  justify-content: space-between;
-} */
 
 .portfolio-works-list li:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -812,11 +734,3 @@ p.portfolio-works.hover-text {
   font-size: 16px;
   line-height: 1.88;
 }
-
-/* Для позиционирования в футере
-
- .footer-social-links {
-  display: flex;
-  justify-content: space-between; 
-  
-  .footer-social-links:not(:last-child){ margin-right: 10px;*/

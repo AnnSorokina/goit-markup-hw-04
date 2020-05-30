@@ -8,6 +8,7 @@
   --background-text-color: rgba(33, 150, 243, 0.9);
   --background-footer-color: #2f303a;
   --background-blocks-color: #f5f4fa;
+  --svg-color: #afb1b8;
 }
 
 body {
@@ -114,7 +115,7 @@ menu {
 
 .contacts {
   display: inline-flex;
-  /* align-items: center; */
+  align-items: center;
   margin-left: auto;
 
   font-weight: 500;
@@ -142,6 +143,14 @@ p,
 .site-menu-list:focus,
 .contacts-list:focus {
   color: var(--accent-text-color);
+}
+
+.mailto,
+.tel {
+  fill: currentColor;
+}
+.contacts li:hover {
+  fill: var(--accent-text-color);
 }
 
 /* Герой */
@@ -193,9 +202,9 @@ h1 {
 
   color: var(--title-text-color);
   background-color: var(--accent-text-color);
-  border-color: var(--accent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 
   font-weight: 700;
   font-size: 16px;
@@ -228,7 +237,24 @@ h1 {
   /* outline: 2px solid tomato; */
 }
 
-.work-icon:before {
+.work-pic {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--background-work-icon-color);
+}
+.work-card svg {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* .work-card:before {
   display: block;
   content: "";
   height: 120px;
@@ -238,13 +264,13 @@ h1 {
 
   background-color: var(--background-work-icon-color);
   border-radius: 4px;
-}
+} */
 
-/* .work-icon:hover:before {
+/* .work-card:hover:before {
   background-color: var(--accent-text-color);
 } */
 
-.thumb-antenna:before {
+/* .thumb-antenna:before {
   background-image: url("../images/vector-1.svg");
 }
 
@@ -258,7 +284,7 @@ h1 {
 
 .thumb-astronaut:before {
   background-image: url("../images/vector-4.svg");
-}
+} */
 
 .work-accents h3 {
   margin-top: 30px;
@@ -378,23 +404,39 @@ h1 {
   justify-content: space-between;
   margin: 0 32px;
 }
+
 .teampeople-icons {
+  display: flex;
   width: 44px;
   height: 44px;
+  justify-content: center;
   align-items: center;
+  border-radius: 50%;
 
   background-color: transparent;
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
 }
 
 .teampeople-icons:not(:last-child) {
   margin-right: 10px;
 }
 
-.icon-inst {
+.teampeople-icons > a {
+  color: var(--svg-color);
+}
+
+.teampeople-icons svg {
+  display: flex;
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
+}
+
+.teampeople-icons svg:hover {
+  fill: var(--title-text-color);
+}
+
+/* .icon-inst {
   background-image: url(../images/icon-inst.svg);
 }
 
@@ -408,7 +450,7 @@ h1 {
 
 .icon-linkedin {
   background-image: url(../images/icon-linkedin.svg);
-}
+} */
 
 .teampeople-icons:hover {
   background-color: var(--accent-text-color);
@@ -437,6 +479,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -445,10 +488,54 @@ h1 {
   border-color: var(--accent-text-color);
 }
 
+.clients-list svg {
+  display: flex;
+  /* width: 90px;
+  height: 52px; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  fill: var(--svg-color);
+}
+
+.logo-1 {
+  width: 44px;
+  height: 49px;
+}
+
+.logo-2 {
+  width: 40px;
+  height: 52px;
+}
+
+.logo-3 {
+  width: 41px;
+  height: 43px;
+}
+
+.logo-4 {
+  width: 80px;
+  height: 42px;
+}
+
+.logo-5 {
+  width: 59px;
+  height: 47px;
+}
+
+.logo-6 {
+  width: 88px;
+  height: 45px;
+}
+
+.clients-list svg:hover {
+  fill: var(--accent-text-color);
+}
+
 /* Футер */
 .page-footer {
   padding-top: 48px;
-  /* outline: 2px solid tomato; */
   background-color: var(--background-footer-color);
 }
 
@@ -510,20 +597,35 @@ address {
 }
 
 .social-links-icons {
+  display: flex;
   height: 44px;
   width: 44px;
-  background-color: var(--ordinary-text-color);
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
+
+  background-color: var(--ordinary-text-color);
+}
+
+.social-links-icons > a {
+  color: var(--title-text-color);
+}
+
+.social-links-icons svg {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+
+  fill: currentColor;
 }
 
 .social-links-icons:not(:last-child) {
   margin-right: 10px;
 }
 
-.icon-inst-f {
+/* .icon-inst-f {
   background-image: url(../images/icon-inst-f.svg);
 }
 
@@ -537,10 +639,11 @@ address {
 
 .icon-linkedin-f {
   background-image: url(../images/icon-linkedin-f.svg);
-}
+} */
 
 .social-links-icons:hover {
   background-color: var(--accent-text-color);
+  cursor: pointer;
 }
 
 .subscription {
@@ -557,7 +660,7 @@ address {
   border-radius: 4px;
   height: 50px;
 
-  border-color: lightgray;
+  border: none;
 }
 
 .mail-button {
@@ -568,21 +671,21 @@ address {
   margin-left: 12px;
   padding: 10px 28px;
   border-radius: 4px;
+  border: none;
   align-items: center;
 
   color: var(--title-text-color);
   background-color: var(--accent-text-color);
-  border-color: var(--accent-text-color);
 
   font-family: inherit;
   font-weight: 900;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  /* text-align: center; */
+  text-align: center;
 }
 
-.mail-button:after {
+/* .mail-button:after {
   display: block;
   content: "";
   width: 24px;
@@ -591,6 +694,12 @@ address {
   background-image: url(../images/icon-send.svg);
   background-size: contain;
   background-repeat: no-repeat;
+} */
+
+.subsription svg {
+  display: flex;
+  /* justify-content: center; */
+  margin-left: 8px;
 }
 
 .footer-developed {
@@ -675,6 +784,7 @@ p.portfolio-works.hover-text {
 .portfolio-navigation button:focus {
   background-color: var(--accent-text-color);
   color: var(--title-text-color);
+  cursor: pointer;
 }
 
 .portfolio-navigation li:not(:last-child) {
@@ -690,7 +800,7 @@ p.portfolio-works.hover-text {
   line-height: 1.62;
   text-align: center;
   background: var(--background-blocks-color);
-  border-color: transparent;
+  border: none;
 }
 
 .portfolio-works-list h2 {

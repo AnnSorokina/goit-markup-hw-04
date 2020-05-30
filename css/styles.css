@@ -449,20 +449,25 @@ h1 {
   justify-content: center;
   align-items: center;
 
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--svg-color);
   border-radius: 4px;
+  fill: var(--svg-color);
 }
 
-.clients-card:hover {
+.clients-link {
+  fill: inherit;
+}
+
+.clients-card:hover,
+.clients-card:focus {
   border-color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+  cursor: pointer;
 }
 
 .clients-logo {
-  display: flex;
   /* width: 90px;
   height: 52px; */
-
-  fill: var(--svg-color);
 }
 
 .logo-1 {
@@ -493,10 +498,6 @@ h1 {
 .logo-6 {
   width: 88px;
   height: 45px;
-}
-
-.clients-logo:hover {
-  fill: var(--accent-text-color);
 }
 
 /* Футер */

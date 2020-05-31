@@ -108,7 +108,7 @@ menu {
   margin-right: 50px;
 }
 
-.site-menu-list {
+.site-menu-ref {
   display: block;
 }
 
@@ -125,26 +125,33 @@ menu {
 }
 
 p,
-.contacts-list {
+.contacts-ref {
   color: var(--ordinary-text-color);
 }
 
-.site-menu-list,
-.contacts-list {
+.site-menu-ref,
+.contacts-ref {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
 }
 
-.site-menu-list:hover,
-.contacts-list:hover,
-.site-menu-list:focus,
-.contacts-list:focus {
+.site-menu-ref:hover,
+.contacts-ref:hover,
+.site-menu-ref:focus,
+.contacts-ref:focus {
   color: var(--accent-text-color);
+}
+
+.contacts-ref {
+  display: flex;
+  align-items: center;
 }
 
 .mailto,
 .tel {
+  margin-right: 10px;
+
   fill: currentColor;
 }
 .contacts li:hover {

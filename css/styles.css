@@ -346,7 +346,7 @@ h1 {
   padding-left: 0;
 }
 
-.teampeople-card > li {
+.teampeople-card {
   width: calc((100% - 3 * 30px) / 4);
   padding-bottom: 24px;
   background: #ffffff;
@@ -389,15 +389,15 @@ h1 {
 }
 
 .teampeople-icons {
-  display: flex;
   width: 44px;
   height: 44px;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
 
   background-color: transparent;
-  fill: currentColor;
+  fill: var(--svg-color);
 }
 
 .teampeople-icons:not(:last-child) {
@@ -405,24 +405,22 @@ h1 {
 }
 
 .teampeople-icons > a {
-  color: var(--svg-color);
-  fill: currentColor;
+  fill: inherit;
 }
 
 .teampeople-icons svg {
-  display: flex;
   width: 20px;
   height: 20px;
-
-  /* fill: currentColor; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.teampeople-icons > a:hover {
-  fill: var(--title-text-color);
-}
-
-.teampeople-icons:hover {
+.teampeople-icons:hover,
+.teampeople-icons:focus {
   background-color: var(--accent-text-color);
+  fill: var(--title-text-color);
+  cursor: pointer;
 }
 
 /* Постоянные клиенты */
@@ -465,10 +463,13 @@ h1 {
   cursor: pointer;
 }
 
-.clients-logo {
-  /* width: 90px;
-  height: 52px; */
-}
+/* .clients-logo {
+  width: 90px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
 .logo-1 {
   width: 44px;
@@ -564,9 +565,9 @@ address {
 }
 
 .social-links-icons {
-  display: flex;
-  height: 44px;
   width: 44px;
+  height: 44px;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -580,13 +581,11 @@ address {
 }
 
 .social-links-icons svg {
-  display: flex;
   width: 20px;
   height: 20px;
+  display: flex;
   justify-content: center;
   align-items: center;
-
-  /* fill: currentColor; */
 }
 
 .social-links-icons:not(:last-child) {
